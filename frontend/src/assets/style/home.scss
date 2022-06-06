@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(191, 191, 191);
+}
+
+.Home {
+    background-size: 10%;
+    background-color: white;
+
+    .toolBar {
+        justify-content: end;
+    }
+
+    .appBar {
+        background-color: white;
+    }
+
+    .iconButton {
+        justify-content: end;
+        position: absolute;
+        display: inline-block;
+    }
+
+    .sideBarIcon {
+        font-size: 20px;
+        color: black;
+    }
+
+    .drawer {
+        background-color: white;
+    }
+}
