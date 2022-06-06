@@ -1,5 +1,7 @@
 export const About = () => {
-    return(
-        <div>aboud</div>
+    return (
+        <div>
+            <img src={'../assets/img/gopher.png'} alt='gopher' />
+        </div>
     );
 }
