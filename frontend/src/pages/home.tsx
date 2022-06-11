@@ -1,5 +1,7 @@
 export const Home = () => {
-    return(
-        <div>home</div>
+    console.log("hoge")
+    return (
+        <div>
+        </div>
     )
 }

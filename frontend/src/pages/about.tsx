@@ -1,7 +1,10 @@
+import gopher from "../assets/img/gopher.png"
+
 export const About = () => {
+    console.log("hogehogehoge");
     return (
         <div>
-            <img src={'../assets/img/gopher.png'} alt='gopher' />
+            <img src={gopher} alt='gopher' />
         </div>
     );
 }

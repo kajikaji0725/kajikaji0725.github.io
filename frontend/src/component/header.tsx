@@ -29,7 +29,7 @@ export const Header = () => {
 
     return (
         <div className='Home'>
-            <AppBar className='appBar'>
+            <AppBar className='appBar' position='sticky'>
                 <Toolbar className='toolBar'>
                     <IconButton onClick={handleClick} aria-controls={open ? 'basic-menu' : undefined}
                         aria-haspopup="true"
@@ -39,21 +39,19 @@ export const Header = () => {
                 </Toolbar>
             </AppBar>
             <Menu anchorEl={anchorEl} open={open} onClose={handleClick} onClick={handleClose}>
-                <MenuItem>
+                <MenuItem component={Link} to={'/'}>
                     <HomeIcon fontSize='large' sx={{ color: grey[500] }} />
                     <ListItemText primary='home' />
-                    <Link to={'/'} />
                 </MenuItem>
-                <MenuItem>
-                    <PortraitIcon fontSize='large' sx={{ color: orange[500] }} />
-                    <ListItemText primary='about' />
-                    <Link to={'/about'} />
+                <MenuItem component={Link} to={'/about'}>
+                        <PortraitIcon fontSize='large' sx={{ color: orange[500] }}/>
+                        <ListItemText primary='about' />
                 </MenuItem>
-                <MenuItem>
+                <MenuItem component={Link} to={'history'}>
                     <HistoryEduIcon fontSize='large' sx={{ color: green[400] }} />
                     <ListItemText primary="history" />
                 </MenuItem>
-                <MenuItem>
+                <MenuItem component={Link} to={'products'}>
                     <SourceIcon fontSize='large' sx={{ color: yellow[600] }} />
                     <ListItemText primary="products" />
                 </MenuItem>
