@@ -1,7 +1,7 @@
 import '../assets/style/home.scss';
 import PortraitIcon from '@mui/icons-material/Portrait';
 import DensityMediumIcon from '@mui/icons-material/Dehaze';
-import { AppBar, IconButton, ListItemText, Menu, MenuItem } from '@mui/material';
+import { AppBar, IconButton, ListItemText, Menu, MenuItem, Typography } from '@mui/material';
 import { Toolbar } from '@mui/material';
 import React, { useState } from 'react';
 import { useEffect } from 'react';
@@ -31,6 +31,9 @@ export const Header = () => {
         <div className='Home'>
             <AppBar className='appBar' position='sticky'>
                 <Toolbar className='toolBar'>
+                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                        kajiのポートフォリオ
+                    </Typography>
                     <IconButton onClick={handleClick} aria-controls={open ? 'basic-menu' : undefined}
                         aria-haspopup="true"
                         aria-expanded={open ? 'true' : undefined} className='iconButton'>
@@ -44,8 +47,8 @@ export const Header = () => {
                     <ListItemText primary='home' />
                 </MenuItem>
                 <MenuItem component={Link} to={'/about'}>
-                        <PortraitIcon fontSize='large' sx={{ color: orange[500] }}/>
-                        <ListItemText primary='about' />
+                    <PortraitIcon fontSize='large' sx={{ color: orange[500] }} />
+                    <ListItemText primary='about' />
                 </MenuItem>
                 <MenuItem component={Link} to={'history'}>
                     <HistoryEduIcon fontSize='large' sx={{ color: green[400] }} />

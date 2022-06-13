@@ -1,7 +1,13 @@
+import '../assets/style/animation.scss';
+
 export const Home = () => {
-    console.log("hoge")
+
+
     return (
         <div>
+            <ul className="leaf">
+                <li></li>
+            </ul>
         </div>
     )
 }
