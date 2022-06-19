@@ -1,5 +1,10 @@
+import { Header } from "../component/header";
+
 export const Products = () => {
     return (
-        <div>products</div>
+        <div>
+            <Header />
+            products
+        </div>
     );
 }

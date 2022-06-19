@@ -1,13 +1,15 @@
 import '../assets/style/animation.scss';
+import { Animation } from '../component/animation';
+import { Header } from '../component/header';
 
 export const Home = () => {
 
 
+
     return (
         <div>
-            <ul className="leaf">
-                <li></li>
-            </ul>
+            <Animation />
+            <Header />
         </div>
     )
 }
